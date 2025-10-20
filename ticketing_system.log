@@ -1,0 +1,348 @@
+2025-10-15 12:45:04,537 - __main__ - INFO - Database initialized with sample data
+2025-10-15 12:45:18,018 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.41:5000
+2025-10-15 12:45:18,266 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 12:45:18,267 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 12:45:19,495 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 12:45:19,542 - werkzeug - INFO -  * Debugger PIN: 685-379-436
+2025-10-15 12:48:03,488 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:48:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 12:48:04,266 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:48:04] "GET /login HTTP/1.1" 200 -
+2025-10-15 12:48:51,346 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:48:51] "GET /login HTTP/1.1" 200 -
+2025-10-15 12:52:39,074 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:52:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 12:54:33,855 - __main__ - WARNING - Failed login attempt for username: Admin
+2025-10-15 12:54:33,862 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:54:33] "POST /login HTTP/1.1" 200 -
+2025-10-15 12:55:12,484 - __main__ - INFO - User admin logged in successfully
+2025-10-15 12:55:12,485 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:55:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-15 12:55:15,009 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:55:15] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 12:56:13,092 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 12:56:13] "GET /ticket/create HTTP/1.1" 200 -
+2025-10-15 13:09:29,331 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:09:29] "[32mGET /ticket/create HTTP/1.1[0m" 302 -
+2025-10-15 13:09:29,369 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:09:29] "GET /login HTTP/1.1" 200 -
+2025-10-15 13:09:44,611 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:09:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 13:10:15,734 - __main__ - INFO - User admin logged in successfully
+2025-10-15 13:10:15,734 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:10:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-15 13:10:16,691 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:10:16] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 13:10:50,896 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:10:50] "GET /ticket/create HTTP/1.1" 200 -
+2025-10-15 13:13:09,831 - __main__ - ERROR - Auto-assignment failed: Entity namespace for "ticket" has no property "status__in"
+2025-10-15 13:14:01,531 - __main__ - INFO - Ticket TKT-1001 created by user admin
+2025-10-15 13:14:01,531 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:14:01] "[32mPOST /ticket/create HTTP/1.1[0m" 302 -
+2025-10-15 13:14:02,958 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:14:02] "GET /ticket/TKT-1001 HTTP/1.1" 200 -
+2025-10-15 13:14:18,038 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:14:18] "GET /tickets HTTP/1.1" 200 -
+2025-10-15 13:15:25,756 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:15:25] "GET /ticket/TKT-1001 HTTP/1.1" 200 -
+2025-10-15 13:16:28,788 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:28] "[32mPOST /ticket/TKT-1001/comment HTTP/1.1[0m" 302 -
+2025-10-15 13:16:29,448 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:29] "[35m[1mPOST /ticket/TKT-1001/update HTTP/1.1[0m" 500 -
+2025-10-15 13:16:30,890 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:30] "GET /ticket/TKT-1001/update?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-15 13:16:30,969 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:30] "GET /ticket/TKT-1001/update?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-15 13:16:32,525 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:32] "GET /ticket/TKT-1001/update?__debugger__=yes&cmd=resource&f=console.png&s=geNBQ91CaiurFsPwumty HTTP/1.1" 200 -
+2025-10-15 13:16:33,784 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:16:33] "GET /ticket/TKT-1001/update?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-15 13:18:19,359 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:18:19] "[32mPOST /ticket/TKT-1001/update HTTP/1.1[0m" 302 -
+2025-10-15 13:18:19,384 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:18:19] "GET /ticket/TKT-1001 HTTP/1.1" 200 -
+2025-10-15 13:20:37,811 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:20:37] "GET /tickets HTTP/1.1" 200 -
+2025-10-15 13:22:01,228 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:22:01] "GET /tickets HTTP/1.1" 200 -
+2025-10-15 13:22:07,533 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:22:07] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 13:22:29,260 - __main__ - INFO - User admin logged out
+2025-10-15 13:22:29,261 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:22:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-15 13:22:29,573 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:22:29] "GET /login HTTP/1.1" 200 -
+2025-10-15 13:22:31,989 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:22:31] "GET /register HTTP/1.1" 200 -
+2025-10-15 13:27:01,502 - __main__ - INFO - New user registered: Paison
+2025-10-15 13:27:01,503 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:27:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-10-15 13:27:01,512 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:27:01] "GET /login HTTP/1.1" 200 -
+2025-10-15 13:27:46,310 - __main__ - INFO - User Paison logged in successfully
+2025-10-15 13:27:46,311 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:27:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-15 13:27:46,334 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 13:27:46] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:02:27,155 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:02:27,155 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:02:27,159 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:02:27,710 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:02:27,712 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:02:35,249 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:02:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:02:35,603 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:02:35] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:02:58,350 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:02:58] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:02:58,362 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:02:58] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:02:58,525 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:02:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 14:03:11,232 - __main__ - INFO - User admin logged in successfully
+2025-10-15 14:03:11,232 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:03:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-15 14:03:11,593 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:03:11] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:07:07,534 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:07:07,820 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:07:08,578 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:07:08,579 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:07:13,818 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:07:14,040 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:07:15,179 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:07:15,187 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:07:36,841 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:07:36,990 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:07:38,452 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:07:38,454 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:08:23,718 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:08:23,828 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:08:25,289 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:08:25,290 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:08:40,087 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:08:40,088 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:08:40,089 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:08:41,523 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:08:41,530 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:08:41,588 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:08:41] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:08:41,635 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:08:41] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:08:42,261 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:08:42] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:08:43,665 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:08:43] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:08:47,446 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:08:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 14:09:01,035 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:09:01] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:09:01,068 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:09:01] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:09:36,294 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:09:36] "GET /admin/users HTTP/1.1" 200 -
+2025-10-15 14:11:16,806 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:11:16,916 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:11:18,297 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:11:18,298 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:11:39,234 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:11:39,235 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:11:39,244 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:11:39,843 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:11:39,843 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:11:41,420 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:11:41] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:11:41,961 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:11:41] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:11:46,333 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:11:46] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:11:46,355 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:11:46] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:12:12,755 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:12:12] "GET /profile HTTP/1.1" 200 -
+2025-10-15 14:12:22,645 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:12:22] "GET /profile/edit HTTP/1.1" 200 -
+2025-10-15 14:14:40,768 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:14:41,238 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:14:42,166 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:14:42,166 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:14:51,544 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:14:51,725 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:14:52,429 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:14:52,430 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:15:10,441 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:10] "GET /profile HTTP/1.1" 200 -
+2025-10-15 14:15:16,965 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:16] "GET /profile/edit HTTP/1.1" 200 -
+2025-10-15 14:15:24,843 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:24] "GET /profile HTTP/1.1" 200 -
+2025-10-15 14:15:30,645 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:15:30,944 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:15:31,804 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:15:31,815 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:15:41,563 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:41] "[35m[1mGET /admin/sla-monitor HTTP/1.1[0m" 500 -
+2025-10-15 14:15:42,301 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:42] "GET /admin/sla-monitor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-15 14:15:42,639 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:15:42] "GET /admin/sla-monitor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-15 14:16:02,741 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:16:02,901 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:16:04,075 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:16:04,076 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:16:04,516 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:16:04] "GET /profile HTTP/1.1" 200 -
+2025-10-15 14:16:11,284 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:16:11] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:16:17,130 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:16:17] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-15 14:16:23,034 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:16:23,039 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:16:23,040 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:16:23,690 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:16:23,697 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:16:24,817 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:16:24] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:16:25,509 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:16:25] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:17:42,124 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:17:42,354 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:17:42,925 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:17:42,926 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:17:44,022 - werkzeug - INFO -  * Detected change in '/home/runner/workspace/ticketing_system.py', reloading
+2025-10-15 14:17:44,123 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:17:44,772 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:17:44,773 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:17:53,370 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:17:53,371 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:17:53,372 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:17:54,107 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:17:54,107 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:17:54,675 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:17:54] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:17:55,133 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:17:55] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:21:35,671 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:21:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:21:35,754 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:21:35] "GET /login HTTP/1.1" 200 -
+2025-10-15 14:21:41,344 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 14:21:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 14:23:14,089 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:23:14] "GET /admin/sla-monitor HTTP/1.1" 200 -
+2025-10-15 14:27:53,314 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:27:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:27:53,822 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:27:53] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:32:36,213 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:32:36] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:32:36,586 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:32:36] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:34:11,355 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.89.130:5000
+2025-10-15 14:34:11,355 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:34:11,357 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 14:34:12,387 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 14:34:12,388 - werkzeug - INFO -  * Debugger PIN: 507-508-467
+2025-10-15 14:34:12,446 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:34:12] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:34:14,161 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:34:14] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 14:53:54,987 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:53:54] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 14:53:58,899 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 14:53:58] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 15:16:11,276 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 15:16:11] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-15 15:16:12,022 - werkzeug - INFO - 172.31.89.130 - - [15/Oct/2025 15:16:12] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 17:30:29,781 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.41:5000
+2025-10-15 17:30:29,781 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 17:30:30,012 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 17:30:30,483 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 17:30:30,486 - werkzeug - INFO -  * Debugger PIN: 601-230-820
+2025-10-15 17:30:56,133 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 17:30:56] "GET /dashboard HTTP/1.1" 200 -
+2025-10-15 17:58:28,749 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.41:5000
+2025-10-15 17:58:28,749 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 17:58:28,769 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 17:58:29,551 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 17:58:29,553 - werkzeug - INFO -  * Debugger PIN: 601-230-820
+2025-10-15 20:10:12,418 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2025-10-15 20:10:12,435 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 20:10:12,459 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 20:10:13,537 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 20:10:13,593 - werkzeug - INFO -  * Debugger PIN: 225-293-856
+2025-10-15 20:11:31,309 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2025-10-15 20:11:31,309 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 20:11:31,313 - werkzeug - INFO -  * Restarting with stat
+2025-10-15 20:11:32,049 - werkzeug - WARNING -  * Debugger is active!
+2025-10-15 20:11:32,051 - werkzeug - INFO -  * Debugger PIN: 225-293-856
+2025-10-16 10:22:46,051 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2025-10-16 10:22:46,461 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 10:22:46,490 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 10:22:46,875 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 10:22:47,481 - werkzeug - INFO -  * Debugger PIN: 225-293-856
+2025-10-18 12:41:52,233 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+2025-10-18 12:41:52,247 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-18 12:41:52,262 - werkzeug - INFO -  * Restarting with stat
+2025-10-18 12:41:52,660 - werkzeug - WARNING -  * Debugger is active!
+2025-10-18 12:41:52,695 - werkzeug - INFO -  * Debugger PIN: 225-293-856
+2025-10-18 12:42:26,938 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:26] "[32mGET / HTTP/1.1[0m" 302 -
+2025-10-18 12:42:27,072 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:27] "GET /login HTTP/1.1" 200 -
+2025-10-18 12:42:27,186 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-18 12:42:55,805 - __main__ - WARNING - Failed login attempt for username: Underrated
+2025-10-18 12:42:55,810 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:55] "POST /login HTTP/1.1" 200 -
+2025-10-18 12:42:58,199 - __main__ - INFO - User admin logged in successfully
+2025-10-18 12:42:58,200 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-18 12:42:58,389 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:42:58] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 12:43:09,686 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:09] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 12:43:18,040 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:18] "GET /ticket/TKT-1000 HTTP/1.1" 200 -
+2025-10-18 12:43:21,344 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:21] "[32mPOST /ticket/TKT-1000/update HTTP/1.1[0m" 302 -
+2025-10-18 12:43:21,552 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:21] "GET /ticket/TKT-1000 HTTP/1.1" 200 -
+2025-10-18 12:43:39,358 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:39] "[32mPOST /ticket/TKT-1000/update HTTP/1.1[0m" 302 -
+2025-10-18 12:43:39,380 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:39] "GET /ticket/TKT-1000 HTTP/1.1" 200 -
+2025-10-18 12:43:45,379 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:43:45] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 12:44:07,144 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:07] "GET /ticket/TKT-1001 HTTP/1.1" 200 -
+2025-10-18 12:44:16,417 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:16] "[32mPOST /ticket/TKT-1001/update HTTP/1.1[0m" 302 -
+2025-10-18 12:44:16,636 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:16] "GET /ticket/TKT-1001 HTTP/1.1" 200 -
+2025-10-18 12:44:24,064 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:24] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 12:44:34,964 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:34] "GET /profile HTTP/1.1" 200 -
+2025-10-18 12:44:41,496 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:44:41] "GET /profile/edit HTTP/1.1" 200 -
+2025-10-18 12:46:09,122 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:46:09] "[32mPOST /profile/edit HTTP/1.1[0m" 302 -
+2025-10-18 12:46:09,132 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:46:09] "GET /profile/edit HTTP/1.1" 200 -
+2025-10-18 12:46:59,699 - __main__ - INFO - User Underrated updated their profile
+2025-10-18 12:46:59,699 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:46:59] "[32mPOST /profile/edit HTTP/1.1[0m" 302 -
+2025-10-18 12:46:59,775 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:46:59] "GET /profile HTTP/1.1" 200 -
+2025-10-18 12:47:12,307 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:47:12] "GET /profile/edit HTTP/1.1" 200 -
+2025-10-18 12:50:37,292 - werkzeug - INFO -  * Detected change in 'C:\\Users\\THE_UNDERRATED_PC\\Downloads\\TKS\\ticketing_system.py', reloading
+2025-10-18 12:50:37,437 - werkzeug - INFO -  * Restarting with stat
+2025-10-18 12:50:37,870 - werkzeug - WARNING -  * Debugger is active!
+2025-10-18 12:50:37,872 - werkzeug - INFO -  * Debugger PIN: 225-293-856
+2025-10-18 12:51:12,596 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:12] "GET /admin/reports HTTP/1.1" 200 -
+2025-10-18 12:51:24,844 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:24] "GET /admin/reports HTTP/1.1" 200 -
+2025-10-18 12:51:29,304 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:29] "GET /admin/users HTTP/1.1" 200 -
+2025-10-18 12:51:39,513 - __main__ - INFO - Admin Underrated deleted user Paison
+2025-10-18 12:51:39,514 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:39] "[32mPOST /admin/user/4/delete HTTP/1.1[0m" 302 -
+2025-10-18 12:51:39,793 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:39] "GET /admin/users HTTP/1.1" 200 -
+2025-10-18 12:51:47,985 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:47] "[35m[1mPOST /admin/user/3/delete HTTP/1.1[0m" 500 -
+2025-10-18 12:51:48,712 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:48] "GET /admin/user/3/delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-18 12:51:48,713 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:48] "GET /admin/user/3/delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-18 12:51:49,128 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:49] "GET /admin/user/3/delete?__debugger__=yes&cmd=resource&f=console.png&s=kz6nJFro0CCXEfYcE7P9 HTTP/1.1" 200 -
+2025-10-18 12:51:49,393 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:51:49] "GET /admin/user/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-18 12:52:00,806 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:52:00] "GET /admin/sla-monitor HTTP/1.1" 200 -
+2025-10-18 12:52:12,314 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:52:12] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 12:52:22,977 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:52:22] "GET /knowledge-base/3 HTTP/1.1" 200 -
+2025-10-18 12:53:05,460 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:53:05] "GET /knowledge-base/2 HTTP/1.1" 200 -
+2025-10-18 12:53:36,859 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:53:36] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 12:53:39,579 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:53:39] "GET /knowledge-base/1 HTTP/1.1" 200 -
+2025-10-18 12:54:02,786 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:02] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 12:54:08,760 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:08] "GET /knowledge-base?search=&category=Getting+Started HTTP/1.1" 200 -
+2025-10-18 12:54:12,420 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:12] "GET /knowledge-base?search=&category=FAQ HTTP/1.1" 200 -
+2025-10-18 12:54:17,140 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:17] "GET /knowledge-base?search=&category=Troubleshooting HTTP/1.1" 200 -
+2025-10-18 12:54:21,971 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:21] "GET /knowledge-base?search=&category= HTTP/1.1" 200 -
+2025-10-18 12:54:22,900 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:54:22] "GET /admin/kb/create HTTP/1.1" 200 -
+2025-10-18 12:55:00,379 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:55:00] "GET /knowledge-base/3 HTTP/1.1" 200 -
+2025-10-18 12:55:04,289 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:55:04] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 12:55:05,972 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:55:05] "GET /knowledge-base/2 HTTP/1.1" 200 -
+2025-10-18 12:55:07,822 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:55:07] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 12:55:09,815 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 12:55:09] "GET /admin/kb/create HTTP/1.1" 200 -
+2025-10-18 13:03:18,080 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:03:18] "[32mPOST /admin/kb/create HTTP/1.1[0m" 302 -
+2025-10-18 13:03:18,094 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:03:18] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 13:03:28,689 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:03:28] "GET /knowledge-base/4 HTTP/1.1" 200 -
+2025-10-18 13:04:30,288 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:04:30] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 13:04:36,361 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:04:36] "GET /knowledge-base/4 HTTP/1.1" 200 -
+2025-10-18 13:05:52,900 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:05:52] "GET /knowledge-base/4 HTTP/1.1" 200 -
+2025-10-18 13:06:02,346 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:06:02] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 13:06:05,192 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:06:05] "GET /admin/kb/create HTTP/1.1" 200 -
+2025-10-18 13:07:54,403 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:07:54] "[32mPOST /admin/kb/create HTTP/1.1[0m" 302 -
+2025-10-18 13:07:54,417 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:07:54] "GET /knowledge-base HTTP/1.1" 200 -
+2025-10-18 13:08:01,727 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:08:01] "GET /knowledge-base?search=&category=Account HTTP/1.1" 200 -
+2025-10-18 13:12:16,470 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:12:16] "GET /knowledge-base?search=&category=Account HTTP/1.1" 200 -
+2025-10-18 13:12:21,180 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:12:21] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 13:12:37,161 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:12:37] "GET /tickets HTTP/1.1" 200 -
+2025-10-18 13:12:40,985 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:12:40] "GET /ticket/create HTTP/1.1" 200 -
+2025-10-18 13:15:13,868 - __main__ - ERROR - Auto-assignment failed: Entity namespace for "ticket" has no property "status__in"
+2025-10-18 13:15:14,192 - __main__ - INFO - Ticket TKT-1002 created by user Underrated
+2025-10-18 13:15:14,192 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:15:14] "[32mPOST /ticket/create HTTP/1.1[0m" 302 -
+2025-10-18 13:15:14,215 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:15:14] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 13:15:34,954 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:15:34] "GET /admin/users HTTP/1.1" 200 -
+2025-10-18 13:15:59,477 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:15:59] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 13:16:06,676 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:06] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 13:16:46,273 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:46] "[32mPOST /ticket/TKT-1002/comment HTTP/1.1[0m" 302 -
+2025-10-18 13:16:46,489 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:46] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 13:16:55,036 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:55] "[32mPOST /ticket/TKT-1002/update HTTP/1.1[0m" 302 -
+2025-10-18 13:16:55,056 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:55] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 13:16:58,605 - __main__ - INFO - User Underrated logged out
+2025-10-18 13:16:58,605 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-18 13:16:58,928 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:16:58] "GET /login HTTP/1.1" 200 -
+2025-10-18 13:17:12,104 - __main__ - WARNING - Failed login attempt for username: agent
+2025-10-18 13:17:12,110 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:17:12] "POST /login HTTP/1.1" 200 -
+2025-10-18 13:19:13,365 - __main__ - INFO - User agent1 logged in successfully
+2025-10-18 13:19:13,366 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:19:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-18 13:19:13,382 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:19:13] "GET /dashboard HTTP/1.1" 200 -
+2025-10-18 13:19:26,269 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 13:19:26] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 14:30:53,847 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:30:53] "GET /tickets HTTP/1.1" 200 -
+2025-10-18 14:30:57,332 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:30:57] "GET /ticket/create HTTP/1.1" 200 -
+2025-10-18 14:31:13,499 - __main__ - ERROR - Auto-assignment failed: Entity namespace for "ticket" has no property "status__in"
+2025-10-18 14:31:13,666 - __main__ - INFO - Ticket TKT-1003 created by user agent1
+2025-10-18 14:31:13,668 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:13] "[32mPOST /ticket/create HTTP/1.1[0m" 302 -
+2025-10-18 14:31:13,890 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:13] "GET /ticket/TKT-1003 HTTP/1.1" 200 -
+2025-10-18 14:31:22,924 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:22] "GET /tickets HTTP/1.1" 200 -
+2025-10-18 14:31:29,496 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:29] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 14:31:41,464 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:41] "[32mPOST /ticket/TKT-1002/update HTTP/1.1[0m" 302 -
+2025-10-18 14:31:41,774 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:41] "GET /ticket/TKT-1002 HTTP/1.1" 200 -
+2025-10-18 14:31:52,119 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2025 14:31:52] "GET /dashboard HTTP/1.1" 200 -

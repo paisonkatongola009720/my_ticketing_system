@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helpdesk - Frontend</title>
+  <style>
+    :root{--accent:#667eea;--muted:#718096;--card:#fff;--bg:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
+    body{font-family:Segoe UI,Segoe,Helvetica,Arial,sans-serif;background:var(--bg);min-height:100vh;margin:0;display:flex;align-items:flex-start;justify-content:center;padding:48px}
+    .shell{width:100%;max-width:1100px}
+    header{display:flex;justify-content:space-between;align-items:center;color:white;margin-bottom:24px}
+    header h1{font-size:1.4rem}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:12px;padding:8px 12px;border-radius:6px;background:rgba(0,0,0,0.08)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+    .card{background:var(--card);border-radius:10px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.12)}
+    h2{margin:0 0 12px;color:var(--accent)}
+    label{display:block;margin:8px 0 6px;color:var(--muted);font-weight:600}
+    input[type="text"],input[type="email"],input[type="password"],select,textarea{
+      width:100%;padding:10px;border:1px solid #e6edf6;border-radius:6px;font-size:14px
+    }
+    textarea{min-height:120px;resize:vertical}
+    .row{display:flex;gap:8px;align-items:center}
+    button{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+    .link{background:#eef2ff;color:var(--accent);text-decoration:none;padding:10px;border-radius:8px;display:inline-block}
+    small{color:var(--muted)}
+    .note{margin-top:8px;color:#e53e3e;font-size:13px;display:none}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1>🎫 Helpdesk Frontend</h1>
+      <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/tickets">Tickets</a>
+        <a href="/knowledge-base">Knowledge Base</a>
+        <a href="/profile">Profile</a>
+        <a href="/logout" class="link">Logout</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <!-- Quick login -->
+      <div class="card" id="loginCard">
+        <h2>Login</h2>
+        <form id="loginForm" method="POST" action="/login">
+          <label for="loginUser">Username</label>
+          <input id="loginUser" name="username" type="text" required autocomplete="username" />
+          <label for="loginPass">Password</label>
+          <input id="loginPass" name="password" type="password" required autocomplete="current-password" />
+          <div style="margin-top:12px;display:flex;gap:8px;">
+            <button type="submit">Sign in</button>
+            <a href="/register" class="link" style="background:#f7fafc;color:var(--accent)">Register</a>
+          </div>
+        </form>
+        <p style="margin-top:10px"><small>Uses server route /login (Flask).</small></p>
+      </div>
+
+      <!-- Quick register -->
+      <div class="card" id="registerCard">
+        <h2>Register</h2>
+        <form id="registerForm" method="POST" action="/register">
+          <label for="regUser">Username</label>
+          <input id="regUser" name="username" type="text" required />
+          <label for="regEmail">Email</label>
+          <input id="regEmail" name="email" type="email" required />
+          <label for="regPass">Password</label>
+          <input id="regPass" name="password" type="password" required />
+          <div style="margin-top:12px">
+            <button type="submit">Create account</button>
+          </div>
+        </form>
+        <p style="margin-top:10px"><small>Submits to /register (Flask).</small></p>
+      </div>
+
+      <!-- Quick create ticket -->
+      <div class="card" id="createTicketCard">
+        <h2>Create Ticket</h2>
+        <form id="createTicketForm" method="POST" action="/ticket/create" enctype="multipart/form-data">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required />
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required></textarea>
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority" required>
+            <option>Low</option><option selected>Medium</option><option>High</option><option>Critical</option>
+          </select>
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option>Technical</option><option>Billing</option><option>Account</option><option>Feature Request</option><option>Bug Report</option><option>Other</option>
+          </select>
+          <label for="attachments">Attachments (max 16MB each)</label>
+          <input id="attachments" name="attachments" type="file" multiple />
+          <div class="note" id="fileError">One or more files exceed the 16MB limit.</div>
+          <div style="margin-top:12px">
+            <button type="submit">Create Ticket</button>
+            <a href="/tickets" class="link" style="background:#f7fafc;color:var(--accent);margin-left:8px">View tickets</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- Simple quick links / actions -->
+      <div class="card">
+        <h2>Quick Actions</h2>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="/knowledge-base" class="link" style="background:#fff8e6;color:#ad6b00">Browse Knowledge Base</a>
+          <a href="/admin/users" class="link" style="background:#f0f9ff;color:#075985">Manage Users (admin)</a>
+          <a href="/admin/sla-monitor" class="link" style="background:#fff5f5;color:#9b2c2c">SLA Monitor</a>
+        </div>
+        <p style="margin-top:12px"><small class="muted">All links target routes exposed by ticketing_system.py</small></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // enforce server file size (16 MB per file)
+    const MAX_BYTES = 16 * 1024 * 1024;
+    const fileInput = document.getElementById('attachments');
+    const fileError = document.getElementById('fileError');
+    const createForm = document.getElementById('createTicketForm');
+
+    fileInput && fileInput.addEventListener('change', () => {
+      fileError.style.display = 'none';
+      for (const f of fileInput.files) {
+        if (f.size > MAX_BYTES) {
+          fileError.style.display = 'block';
+          break;
+        }
+      }
+    });
+
+    createForm && createForm.addEventListener('submit', (e) => {
+      for (const f of fileInput.files) {
+        if (f.size > MAX_BYTES) {
+          e.preventDefault();
+          fileError.style.display = 'block';
+          fileError.scrollIntoView({behavior:'smooth'});
+          return false;
+        }
+      }
+      return true;
+    });
+  </script>
+</body>
+</html>
